@@ -17,5 +17,4 @@ B = ORDER A BY amount;
 C = limit B 5;
 D = FOREACH C GENERATE amount;
 
-#Almacenamiento
 STORE D INTO 'output/' using PigStorage(',');
